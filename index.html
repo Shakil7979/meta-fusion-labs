@@ -9,11 +9,14 @@
         <meta property="og:url" content="">
         <meta property="og:image" content="">
 
-        <title>Web Template</title>
-        <link rel="icon" href="assets/images/favicon.png">
+        <title>Meta Fusion Lab</title>
+        <link rel="icon" href="assets/images/fav.png">
 
         <!-- Bootstrap -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- Slider here -->
+        <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+        <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
         <!-- Fontawesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
         <!-- Normalize -->
@@ -24,26 +27,218 @@
     </head>
     <body> 
 
+
         
         <!--=====================  Start Header Area  ====================-->
-        <header class="header_area">
-
+        <header class="header-area">
+            <div class="container"> 
+                <div class="d-flex align-items-center justify-content-between header">
+                    <div class="logo">
+                        <a href="index.html"><img src="assets/images/logo.png" alt="logo"></a>
+                        <button class="mobile-bars"><i class="fa-solid fa-bars-staggered"></i></button>
+                    </div>
+                    <div class="nav">
+                        <ul class="d-flex flex-lg-row flex-column align-items-center gx-4">
+                            <li><a class="nav-a active" href="index.html">Home</a></li>
+                            <li><a class="nav-a" href="#">About</a></li>
+                            <li><a class="nav-a" href="#">ECM Coin</a></li>
+                            <li><a class="nav-a" href="#">Ecosystem</a></li>
+                            <li class="desktop-none"><a href="#" class="btn-1">Contact Us <img src="assets/images/hero/btn-1-shape.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="header-btn mobile-none">
+                        <a href="#" class="btn-1">Contact Us <img src="assets/images/hero/btn-1-shape.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
         </header>
         <!--=====================  End Header Area  ====================-->
 
         <main class="main_area"> 
-            <!--=====================  Start Banner Area  ====================-->
-            <section class="banner_area">
+            <!--=====================  Start Hero Area  ====================-->
+            <section class="hero-area">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-crypto-text">
+                            <img src="assets/images/hero/crypto.png" alt="">
+                            <p>Empowering Global Startup Growth </p> 
+                             <div class="row">
+                                <div class="col-lg-10 offset-lg-1">
+                                    <h2 class="text-center fw-bold common-heading hero-header-title mt-28">
+                                        <span class="primary-color">MetaFusion Labs</span>: Architecting the 
+                                        <span class="primary-color">Future of Digital</span> Commerce
+                                    </h2>
+                                </div>
+                            </div> 
+                            <div class="hero-crypto-img">
+                                <img src="assets/images/hero/crypto-bg.png" alt="">
+                            </div>
+                        </div>
+                        <p>Powering ECM Coin and its ecosystem—delivering scalable, low-cost, blockchain infrastructure for e-commerce, trading, and beyond.</p>
+                        <div class="hero-btn">
+                            <ul>
+                                <li><a href="#" class="btn-1">Get Started <img src="assets/images/hero/btn-1-shape.png" alt=""></a></li>
+                                <li><a href="#" class="btn-1">View Exchange <img src="assets/images/hero/btn-2-shape.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                        <div class="hero-logo">
+                            <span class="border-middle"></span>
+                            <ul>
+                                <li>
+                                    <img src="assets/images/hero/1.png" alt="">
+                                    <img src="assets/images/hero/5.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="assets/images/hero/2.png" alt="">
+                                    <img src="assets/images/hero/6.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="assets/images/hero/3.png" alt="">
+                                    <img src="assets/images/hero/7.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="assets/images/hero/4.png" alt="">
+                                    <img src="assets/images/hero/8.png" alt="">
+                                </li> 
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="hero-particle-animation">
+                    <div id="tsparticles"></div>
+                </div>
             </section>
-            <!--=====================  End Banner Area  ====================--> 
+            <!--=====================  End Hero Area  ====================--> 
+
+            <!--=====================  End About Area  ====================--> 
+            <section class="about-area section-padding">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="about-img">
+                                <img src="assets/images/about/about.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="about-text">
+                                <p>About Us</p>
+                                <h2 class="text-start common-heading mt-24">Concerning 
+                                    <span class="primary-color">Meta Fusion Labs</span> 
+                                </h2>
+                                <ul class="about-ul">
+                                    <li><p>Panama-based blockchain company behind the ECM Ecosystem.</p></li>
+                                    <li><p>Partnered with BlockVerse for token and blockchain development.</p></li>
+                                    <li><p>Focused on building Web3 infrastructure for finance and commerce.</p></li> 
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-shape">
+                    <div class="about-left">
+                        <img src="assets/images/about/left.png" alt="">
+                    </div>
+                    <div class="about-right">
+                        <img src="assets/images/about/right.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <!--=====================  End About Area  ====================--> 
+
+            <!--=====================  Start Blockchain Area  ====================--> 
+            <section class="slider-area">
+                <div class="container">
+                    <div class="slider">
+                        <div class="slider-header row g-5">
+                        <div class="col-lg-7">
+                            <span class="bannder-text-top">Blockchain Features</span> 
+                            <h2 class="text-left common-heading mt-28">
+                            Why <span class="primary-color">ECM Blockchain?</span>
+                            </h2> 
+                        </div>
+                        <div class="col-lg-5">
+                            <p>
+                            ECM Blockchain offers ultra-low fees, lightning-fast
+                            transactions, and seamless e-commerce integration. Built for
+                            scalability, it empowers developers to launch high-performance
+                            dApps with ease.
+                            </p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-main owl-carousel owl-theme">
+                <div class="slider-item">
+                    <div class="slider-icon-wrapper">
+                    <img src="assets/images/slider/slider-bg.png" alt="icon" />
+                    <div class="slider-icon">
+                        <img src="assets/images/slider/1.svg" alt="icon" />
+                    </div>
+                    </div>
+                    <h2 class="slider-item-title">Low transaction costs</h2>
+                    <button class="slider-item-btn">Learn More</button>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-icon-wrapper">
+                    <img src="assets/images/slider/slider-bg.png" alt="icon" />
+                    <div class="slider-icon">
+                        <img src="assets/images/slider/1.svg" alt="icon" />
+                    </div>
+                    </div>
+                    <h2 class="slider-item-title">Low transaction costs</h2>
+                    <button class="slider-item-btn">Learn More</button>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-icon-wrapper">
+                    <img src="assets/images/slider/slider-bg.png" alt="icon" />
+                    <div class="slider-icon">
+                        <img src="assets/images/slider/1.svg" alt="icon" />
+                    </div>
+                    </div>
+                    <h2 class="slider-item-title">Low transaction costs</h2>
+                    <button class="slider-item-btn">Learn More</button>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-icon-wrapper">
+                    <img src="assets/images/slider/slider-bg.png" alt="icon" />
+                    <div class="slider-icon">
+                        <img src="assets/images/slider/1.svg" alt="icon" />
+                    </div>
+                    </div>
+                    <h2 class="slider-item-title">
+                    Low transaction costs Low transaction costs
+                    </h2>
+                    <button class="slider-item-btn">Learn More</button>
+                </div>
+                <div class="slider-item">
+                    <div class="slider-icon-wrapper">
+                    <img src="assets/images/slider/slider-bg.png" alt="icon" />
+                    <div class="slider-icon">
+                        <img src="assets/images/slider/1.svg" alt="icon" />
+                    </div>
+                    </div>
+                    <h2 class="slider-item-title">Low transaction costs</h2>
+                    <button class="slider-item-btn">Learn More</button>
+                </div>
+                </div>
+                <div class="about-shape">
+                    <div class="about-left">
+                        <img src="assets/images/about/left.png" alt="">
+                    </div>
+                    <div class="about-right">
+                        <img src="assets/images/about/right.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <!--=====================  End Blockchain Area  ====================--> 
         </main>
                 
-        <!--=====================  Start Header Area  ====================-->
-        <footer class="footer_area">
+        <!--=====================  Start Footer Area  ====================-->
+        <footer class="footer-area">
 
         </footer>
-        <!--=====================  End Header Area  ====================-->
+        <!--=====================  End Footer Area  ====================-->
  
 
 
@@ -53,8 +248,11 @@
         <script src="assets/js/popper.min.js"></script>
         <!-- Bootstrap -->
         <script src="assets/js/bootstrap.min.js"></script>
+        <!-- Owl Carousel -->
+        <script src="assets/js/owl.carousel.min.js"></script>
         <!-- Modernizr -->
         <script src="assets/js/modernizr-3.11.2.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
         <!-- Custom JS (Handed)-->
         <script src="assets/js/scripts.js"></script>
     </body>

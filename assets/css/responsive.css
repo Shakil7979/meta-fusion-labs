@@ -1,17 +1,129 @@
-@media all and (max-width: 1199px){
-
+@media all and (min-width: 1400px){
+    .container {
+        max-width: 1350px;
+    }
 }
 
+@media all and (max-width: 1400px){
+    .nav-a { 
+        font-size: 16px; 
+    }
+    .btn-1 { 
+        font-size: 16px; 
+    }
+    .common-heading { 
+        font-size: 56px; 
+    }
+}
+
+@media all and (max-width: 1199px){
+    .hero-crypto-img img {
+        width: 100%;
+    }
+    .common-heading {
+        font-size: 48px;
+    }
+}
+
+@media all and (min-width: 991px){
+    .nav{
+        display: block !important;
+    }
+}
 @media all and (max-width: 991px){
-	
+    .mobile-none{
+        display: none;
+    } 
+    .desktop-none{
+        display: block;
+    }
+    .nav { 
+        position: absolute;
+        background: #22211E;
+        width: 100%;
+        left: 0;
+        top: 70px;
+        padding:  60px 0 50px 0;
+        border-radius: 0 0 30px 30px;
+        display: none;
+    }
+    .nav ul { 
+        gap: 26px; 
+        width: 100%;
+    }
+    .logo {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .mobile-bars {
+        background: transparent;
+        border: none;
+        color: #FD9E03;
+        font-size: 30px;
+        width: 40px;
+        display: block;
+    }
+    .common-heading {
+        font-size: 42px; 
+    }
+    .hero-content > p { 
+        margin: 35px auto 0 auto;
+        font-size: 16px;
+    }
+    .hero-crypto-text p {
+        font-weight: 400; 
+    }
+    .about-img img{
+        width: 100%;
+    }
 }
 
 @media all and (max-width: 767px){
-	
+	.common-heading {
+        font-size: 31px;
+    }
+    .hero-content > p { 
+        font-size: 14px;
+    }
+    .hero-crypto-text p { 
+        font-size: 14px; 
+        letter-spacing: 17%; 
+    }
+    .logo img {
+        width: 143px;
+    }
+    .hero-logo ul li { 
+        flex: 0 0 50%; 
+    }
+    .hero-logo ul li {
+        padding: 50px 0; 
+        gap: 58px;
+    }
+    .slider-item-title {
+        font-size: 18px;
+    }
+    button.slider-item-btn {
+        font-size: 16px;
+        padding: 8px;
+    }
+    .slider-item {
+        border: 3px solid rgba(255, 255, 255, 0.1);
+    }
+    .slider-area .owl-item.active .slider-item:hover {
+        border: 3px solid #fd9e03;
+        border-radius: 40px;
+    }
 }
 
 @media all and (max-width: 575px){
-	
+    .common-heading {
+        font-size: 28px;
+    }
+    .slider-item-title {
+        font-size: 16px;
+    }
 }
 
 @media all and (max-width: 450px){
