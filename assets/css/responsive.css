@@ -33,7 +33,17 @@
         left: 40%; 
         transform: rotate(130deg);
     }
+    .font-20 { 
+        max-width: 298px;
+    }
 }
+
+@media all and (min-width: 1320px) { 
+  .slider-item {
+    padding: 48px 57px;
+  }
+}
+
 @media all and (max-width: 1320px) {
   .token-item {
     min-height: 346px;
@@ -43,6 +53,9 @@
 @media all and (max-width: 1199px){
     .hero-crypto-img img {
         width: 100%;
+    }
+    .slider-area { 
+        overflow: hidden;
     }
     .hero-header-title,
     .common-heading {
@@ -65,11 +78,32 @@
     }
     .token-item {
         max-width: 533px;
+        margin: 0 auto;
     }
     .token-item-2 {
         max-width: 301px !important;
         min-height: 400px !important;
         margin: 0 auto;
+    }
+    .form-control {
+        padding: 15px 24px;
+        border-radius: 10px;
+    }
+    .token-area {
+        padding-top: 260px;
+    }
+    .company-name {
+        font-size: 102px;
+    }
+    .footer-companyname {
+        padding: 160px 0 57px 0;
+    }
+    .form-area {
+        padding-top: 30px;
+        padding-bottom: 100px;
+    }
+    .slider-area {
+        padding: 100px 0 54px 0;
     }
 }
 
@@ -82,13 +116,9 @@
     .mobile-none{
         display: none;
     } 
-    .token-logo img {
-        max-width: 284px;
-    }
-    .token-area {
-        padding-top: 146px;
-        padding-bottom: 61px;
-    }
+    .single-web3 { 
+        padding-bottom: 70px;
+    } 
     .single-hold-ecm-2::after {
         width: 14.5%;
         left: 39.5%;
@@ -164,14 +194,47 @@
         top: 19px;
         left: 42px;
     }
+    .token-logo img {
+        max-width: 284px;
+    }
+    .token-area {
+        padding-top: 146px;
+        padding-bottom: 61px;
+    }
+    .slider-item-title {
+        font-size: 18px;
+    }
+    .form-area {
+        padding-top: 60px;
+        padding-bottom: 70px;
+    }
+    .form-label {
+        font-size: 22px;
+        padding-bottom: 10px;
+    }
+    .form-group {
+        padding-bottom: 30px;
+    }
+    .form-text {
+        padding: 27px 39px;
+    }
+    .banner-heading-text {
+        padding-bottom: 10px;
+    }
+    .footer-companyname {
+        padding: 100px 0 70px 0;
+    }
+    .slider-area {
+        padding: 100px 0 115px 0;
+    }
 }
 
 @media all and (max-width: 767px){
     .common-top-title { 
         font-size: 14px; 
     }
-    .slider-main {
-        padding: 0 25px;
+    .font-20 { 
+        font-size: 16px; 
     }
     .common-heading {  
         line-height: 45px; 
@@ -287,6 +350,94 @@
         padding-top: 63px;
         padding-bottom: 61px;
     }
+    .btn-2 { 
+        font-size: 14px; 
+    }
+
+    button.slider-item-btn {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .slider-item {
+    border: 3px solid rgba(255, 255, 255, 0.1);
+  }
+  .slider-area .owl-item.active .slider-item:hover {
+    border: 3px solid #fd9e03;
+    border-radius: 40px;
+  }
+  .token-item {
+    max-width: 548px;
+  }
+  .banner-heading-text {
+    font-size: 42px;
+  }
+  p {
+    font-size: 17px;
+  }
+  .slider-area .owl-prev {
+    right: 133px;
+  }
+  .slider-area .owl-next {
+    right: 65px;
+  }
+  .first-active-item .slider-item {
+    border: 3px solid #fd9e03;
+    border-radius: 20px;
+  }
+  .token-item {
+    min-height: 337px;
+  }
+  .token-area {
+    padding-top: 63px;
+    padding-bottom: 61px;
+  }
+  .slider-main {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .slider-item {
+    border-radius: 30px;
+    min-height: 348px;
+  }
+  .slider-item-title {
+    font-size: 16px;
+  }
+  .slider-area {
+    padding: 80px 0 117px 0;
+  }
+  .form-area {
+    padding-top: 39px;
+    padding-bottom: 70px;
+  }
+  .form-text {
+    padding: 25px 10px;
+  }
+  .token-item-2 {
+    max-width: 260px !important;
+    min-height: 343px !important;
+  }
+  .form-text-header {
+    padding-top: 10px;
+  }
+  .form-control {
+    font-size: 16px;
+    padding: 15px 20px;
+  }
+  .footer-menu-item {
+    font-size: 18px;
+    padding: 5px 12px;
+  }
+  .footer-menu-underline {
+    font-size: 18px;
+    padding: 4px 10px;
+  }
+  .company-name {
+    font-size: 53px;
+  }
+  .footer-companyname {
+    padding: 99px 0 20px 0;
+  }
 
 }
 
@@ -294,12 +445,21 @@
     .mt-28 {
         margin-top: 10px;
     }
+    .web3-btn::after { 
+        width: 105%; 
+    }
     .hero-header-title,
     .common-heading {
         font-size: 28px;
     }
     .slider-item-title {
         font-size: 16px;
+    }
+    .btn-2 { 
+        font-size: 14px; 
+    }
+    .font-20 { 
+        font-size: 14px; 
     }
     p {
         font-size: 14px; 
@@ -311,6 +471,40 @@
         left: 23%;
         transform: rotate(133deg);
         width: 18%;
+    }
+    .banner-heading-text {
+        font-size: 35px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .container {
+        max-width: 95%;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .token-item {
+        min-height: 271px;
+        max-width: 548px;
+        padding: 31px 50px;
+    }
+    .slider-main {
+        padding-top: 40px;
+    }
+    .footer-text p {
+        font-size: 16px;
+    }
+    .footer-companyname {
+        padding: 39px 0 20px 0;
+    }
+    .form-text {
+        padding: 10px 5px;
+    }
+    .token-area {
+        padding-bottom: 36px;
+    }
+    .slider-area {
+        padding: 80px 0 82px 0;
     }
     
 }
