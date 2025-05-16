@@ -549,6 +549,12 @@ button:focus {
 	padding: 40px; 
 	border-radius: 30px; 
 	height: 544px;
+	transition: 0.3s;
+	border: 1px solid transparent;
+}
+
+.single-hold-ecm:hover {
+	border: 1px solid #FD9E04;
 }
 
 .single-hold-ecm-1{
@@ -1261,6 +1267,7 @@ section {
 }
 .footer-menu-underline:hover {
   text-decoration: none;
+  color: #FD9E04;
 }
 .footer-text p {
   font-size: 18px;
