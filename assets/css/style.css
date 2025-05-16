@@ -234,13 +234,15 @@ p {
 	text-align: center;
 }
 
-.hero-crypto-text p { 
+.common-top-title { 
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 160%;
-	letter-spacing: 25%;
-	text-align: center; 
+	letter-spacing: 25%; 
 	color: #fff;
+}
+
+.mt-66 {
 	margin-top: 66px;
 }
 
@@ -250,6 +252,10 @@ p {
 	line-height: 110.00000000000001%;
 	letter-spacing: 0%; 
 	color: #fff;  
+}
+
+.font-64 {
+	font-size: 64px;
 }
 
 .primary-color {
@@ -277,14 +283,9 @@ p {
 	right: 0;
 	margin: 0 auto;
 	z-index: -1;
-}
+} 
 
-.hero-content > p { 
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 160%;
-	letter-spacing: 0%;
-	text-align: center;
+.common-pragraph {  
 	color: #FFFFFFCC;  
 	width: 100%;
 	max-width: 766px;

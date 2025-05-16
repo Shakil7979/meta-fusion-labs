@@ -163,7 +163,12 @@
 }
 
 @media all and (max-width: 767px){
-    
+    .common-top-title { 
+        font-size: 14px; 
+    }
+    .common-heading {  
+        line-height: 45px; 
+    }
     .hero-header-title,
 	.common-heading {
         font-size: 31px;
