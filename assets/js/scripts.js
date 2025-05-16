@@ -60,7 +60,7 @@
       '<i class="fas fa-angle-left"></i>',
       '<i class="fas fa-angle-right"></i>',
     ],
-    autoplay: true,
+    // autoplay: true,
     responsiveClass: true,
     responsive: {
       0: {
@@ -80,4 +80,16 @@
       },
     },
   });
+
+$(".owl-carousel").on(
+    "initialized.owl.carousel changed.owl.carousel refreshed.owl.carousel",
+    function (event) {
+      setTimeout(function () {
+        $(".owl-item").removeClass("first-active-item");
+        $(".owl-item.active").first().addClass("first-active-item");
+      }, 100);
+    }
+  );
+
+
   });

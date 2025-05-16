@@ -11,17 +11,65 @@
     .btn-1 { 
         font-size: 16px; 
     }
+    .hero-header-title,
     .common-heading { 
         font-size: 56px; 
     }
+    .gx-30 {
+        gap: 100px 72px;
+    }
+    h3 { 
+        font-size: 22px; 
+    }
+    p {
+        font-size: 16px; 
+    } 
+    .single-hold-ecm-4::after { 
+        left: 73px; 
+        transform: rotate(125deg);
+    }
+    .single-hold-ecm-2::after { 
+        width: 14.5%; 
+        left: 40%; 
+        transform: rotate(130deg);
+    }
+}
+@media all and (max-width: 1320px) {
+  .token-item {
+    min-height: 346px;
+  }
 }
 
 @media all and (max-width: 1199px){
     .hero-crypto-img img {
         width: 100%;
     }
+    .hero-header-title,
     .common-heading {
         font-size: 48px;
+    }
+    .single-coin {
+        flex: 0 0 43%;
+    } 
+    .single-hold-ecm-4::after {
+        left: 54px;
+        transform: rotate(121deg);
+    }
+    .hold-btn .btn-1 {
+        font-size: 14px;
+    }
+    .single-hold-ecm-2::after {
+        width: 15.5%;
+        left: 39%;
+        transform: rotate(126deg);
+    }
+    .token-item {
+        max-width: 533px;
+    }
+    .token-item-2 {
+        max-width: 301px !important;
+        min-height: 400px !important;
+        margin: 0 auto;
     }
 }
 
@@ -34,8 +82,35 @@
     .mobile-none{
         display: none;
     } 
+    .token-logo img {
+        max-width: 284px;
+    }
+    .token-area {
+        padding-top: 146px;
+        padding-bottom: 61px;
+    }
+    .single-hold-ecm-2::after {
+        width: 14.5%;
+        left: 39.5%;
+        transform: rotate(137deg);
+    }
+    .single-hold-ecm-4::after {
+        left: 24%;
+        transform: rotate(144deg);
+        width: 16%;
+    }
+    .hold-btn { 
+        justify-content: center;
+        margin-top: 35px;
+    }
     .desktop-none{
         display: block;
+    }
+    .gx-30 {
+        gap: 60px 72px;
+    }
+    .ecm-coin-content{  
+        clip-path: polygon(50% 0%, 100% 0, 99% 96%, 49% 96%, 43% 100%, 0 100%, 0 0);
     }
     .nav { 
         position: absolute;
@@ -68,6 +143,7 @@
         width: 40px;
         display: block;
     }
+    .hero-header-title,
     .common-heading {
         font-size: 42px; 
     }
@@ -87,11 +163,38 @@
 }
 
 @media all and (max-width: 767px){
+    
+    .hero-header-title,
 	.common-heading {
         font-size: 31px;
     }
+    .single-hold-ecm-2::after {
+        width: 15.5%;
+        left: 39.5%;
+        transform: rotate(128deg);
+    }
+    .single-hold-ecm{ 
+        border-radius: 15px;  
+    }
+    .single-hold-ecm-4::after {
+        left: 24%;
+        transform: rotate(136deg);
+        width: 16%;
+    }
+    h4 { 
+        font-size: 18px; 
+    }
+    .ecm-coin-plus{
+        display: none;
+    }
+    .ecm-coin-content {
+        padding: 70px 70px 100px 70px; 
+    }
     .hero-content > p { 
         font-size: 14px;
+    }
+    p {
+        font-size: 16px; 
     }
     .hero-crypto-text p { 
         font-size: 14px; 
@@ -121,17 +224,92 @@
         border: 3px solid #fd9e03;
         border-radius: 40px;
     }
+    .section-padding {
+        padding: 60px 0;
+    }
+    .single-hold-ecm {
+        border-radius: 15px;
+        background-size: cover;
+    }
+    .single-hold-ecm-4::before,
+    .single-hold-ecm-4.hero-crypto-text , 
+    .single-hold-ecm-2::before,
+    .single-hold-ecm-2::after { 
+        display: none;
+    }
+    
+    .about-content {
+        overflow: inherit;
+    }
+    .token-item {
+        max-width: 548px;
+    }
+    .banner-heading-text {
+        font-size: 42px;
+    } 
+    p {
+        font-size: 16px;
+    }
+    .container {
+        max-width: 95%;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .token-item {
+        min-height: 302px;
+    }
+    .slider-area .owl-prev {
+        right: 133px;
+    }
+    .slider-area .owl-next {
+        right: 65px;
+    }
+    .first-active-item .slider-item {
+        border: 3px solid #fd9e03;
+        border-radius: 20px;
+    }
+    .token-item {
+        min-height: 337px;
+    }
+    .token-area {
+        padding-top: 63px;
+        padding-bottom: 61px;
+    }
+
 }
 
 @media all and (max-width: 575px){
+    
+    .hero-header-title,
     .common-heading {
         font-size: 28px;
     }
     .slider-item-title {
         font-size: 16px;
     }
+    p {
+        font-size: 14px; 
+    }
+    .single-hold-ecm-2::after { 
+        transform: rotate(124deg);
+    }
+    .single-hold-ecm-4::after {
+        left: 23%;
+        transform: rotate(133deg);
+        width: 18%;
+    }
+    
 }
 
 @media all and (max-width: 450px){
-	
+	.single-hold-ecm-2::after {
+        transform: rotate(118deg);
+        width: 19.5%;
+        left: 37.5%;
+    }
+    .single-hold-ecm-4::after {
+        left: 22%;
+        transform: rotate(126deg);
+        width: 21%;
+    }
 }
