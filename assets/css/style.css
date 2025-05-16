@@ -508,12 +508,7 @@ button:focus {
 .slider-area .owl-item.active .slider-item:hover {
   border: 5px solid #fd9e03;
   border-radius: 40px;
-}
-
-.slider-main {
-	padding: 0 25px;
-}
-
+} 
 .slider-icon-wrapper {
   width: 97px;
   height: auto;

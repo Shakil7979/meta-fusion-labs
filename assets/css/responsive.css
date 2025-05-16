@@ -166,6 +166,9 @@
     .common-top-title { 
         font-size: 14px; 
     }
+    .slider-main {
+	padding: 0 25px;
+}
     .common-heading {  
         line-height: 45px; 
     }
