@@ -160,6 +160,10 @@
     .header { 
         border-radius: 15px; 
     }
+    .about-star { 
+        top: 19px;
+        left: 42px;
+    }
 }
 
 @media all and (max-width: 767px){
@@ -167,8 +171,8 @@
         font-size: 14px; 
     }
     .slider-main {
-	padding: 0 25px;
-}
+        padding: 0 25px;
+    }
     .common-heading {  
         line-height: 45px; 
     }
@@ -287,7 +291,9 @@
 }
 
 @media all and (max-width: 575px){
-    
+    .mt-28 {
+        margin-top: 10px;
+    }
     .hero-header-title,
     .common-heading {
         font-size: 28px;

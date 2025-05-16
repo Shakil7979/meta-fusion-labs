@@ -736,6 +736,13 @@ section {
 	border-radius: 30px;
 	padding: 40px 42px;
 	height: 100%;
+	position: relative;
+}
+
+.web3-btn { 
+	position: absolute;
+	bottom: 0;
+	right: 0;
 }
 
 .web3-h5{
@@ -773,6 +780,8 @@ section {
 	font-weight: 500;
 	font-size: 20px;
 	color: #fff;
+	width: 100%;
+	max-width: 320px;
 }
 
 
