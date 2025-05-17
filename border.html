@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reverse Border Radius</title>
+  <style>
+    body {
+      background: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .reverse-box {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background: #222;
+      overflow: hidden;
+    }
+
+    .reverse-box::before,
+    .reverse-box::after {
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      background: #111;
+      z-index: 2;
+    }
+
+    /* Top left corner cut */
+    .reverse-box::before {
+      top: 0;
+      left: 0;
+      border-bottom-right-radius: 40px;
+    }
+
+    /* Bottom right corner cut */
+    .reverse-box::after {
+      bottom: 0;
+      right: 0;
+      border-top-left-radius: 40px;
+    }
+
+    /* Add more cuts if needed using extra elements or nested divs */
+  </style>
+</head>
+<body>
+
+  <div class="reverse-box"></div>
+
+</body>
+</html>

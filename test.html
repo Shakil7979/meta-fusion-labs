@@ -1,31 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .card-with-inward-radius {
-  width: 300px;
-  height: 200px;
-  background-color: #222;
-  position: relative;
-
-  -webkit-mask:
-    radial-gradient(circle 40px at top left, transparent 39px, black 40px);
-  mask:
-    radial-gradient(circle 40px at top left, transparent 39px, black 40px);
-}
-
-    </style>
+  <meta charset="UTF-8">
+  <title>Exact Glow Line Animation</title>
+  <style>
+    body {
+      margin: 0;
+      background: #0a0a0a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    canvas {
+      display: block;
+    }
+  </style>
 </head>
 <body>
-
-    
-    <div class="card-with-inward-radius">
-  <!-- Content here -->
-</div>
+  <canvas id="lineCanvas" width="180" height="220"></canvas>
 
 
+  
+  <script>
+    const canvas = document.getElementById('lineCanvas');
+const ctx = canvas.getContext('2d');
+
+canvas.width = 200;
+canvas.height = 220;
+
+// Central spine (vertical)
+const spine = [
+  { x: 100, y: 20 },
+  { x: 100, y: 200 }
+];
+
+// 4 animated lines from spine
+const lines = [
+  // Top arm: from center up, then right
+  [
+    { x: 100, y: 50 },
+    { x: 100, y: 70 },
+    { x: 130, y: 70 }
+  ],
+  // Center-right arm
+  [
+    { x: 100, y: 115 },
+    { x: 140, y: 115 }
+  ],
+  // Bottom-right arm
+  [
+    { x: 100, y: 170 },
+    { x: 150, y: 170 },
+    { x: 150, y: 200 }
+  ],
+  // New Left arm (from center to left)
+  [
+    { x: 100, y: 115 },
+    { x: 60, y: 115 }
+  ]
+];
+
+const dots = lines.map(line => ({
+  path: line,
+  progress: 0,
+  speed: 0.002,
+  direction: 1
+}));
+
+function drawLine(path, color = 'rgba(255, 255, 255, 0.05)') {
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 1;
+  ctx.beginPath();
+  ctx.moveTo(path[0].x, path[0].y);
+  for (let i = 1; i < path.length; i++) {
+    ctx.lineTo(path[i].x, path[i].y);
+  }
+  ctx.stroke();
+}
+
+function drawDot(path, progress) {
+  const total = path.length - 1;
+  let i = Math.floor(progress * total);
+  let t = (progress * total) - i;
+
+  if (i >= total) {
+    i = total - 1;
+    t = 1;
+  }
+
+  const start = path[i];
+  const end = path[i + 1];
+  const x = start.x + (end.x - start.x) * t;
+  const y = start.y + (end.y - start.y) * t;
+
+  ctx.beginPath();
+  ctx.arc(x, y, 3, 0, Math.PI * 2);
+  ctx.fillStyle = 'orange';
+  ctx.shadowColor = 'orange';
+  ctx.shadowBlur = 10;
+  ctx.fill();
+  ctx.shadowBlur = 0;
+}
+
+function animate() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  // Draw spine and lines
+  drawLine(spine);
+  lines.forEach(drawLine);
+
+  // Animate dots
+  dots.forEach(dot => {
+    drawDot(dot.path, dot.progress);
+    dot.progress += dot.speed * dot.direction;
+    if (dot.progress >= 1 || dot.progress <= 0) {
+      dot.direction *= -1;
+    }
+  });
+
+  requestAnimationFrame(animate);
+}
+
+animate();
+
+  </script>
 </body>
 </html>
